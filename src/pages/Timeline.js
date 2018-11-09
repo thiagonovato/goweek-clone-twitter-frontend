@@ -23,7 +23,7 @@ class Timeline extends Component {
 
 
     subscribeToEvents = () => {
-        const io = socket('http://localhost:3000')
+        const io = socket('https://goweek-clone-twitter-backend-pamqyrnoei.now.sh')
 
         io.on('tweet', data => {
             this.setState({
